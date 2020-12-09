@@ -18,8 +18,8 @@ pipeline {
 
     stage('TF Plan') {
       steps {
-          sh 'terraform init'
-          sh 'terraform plan -out myplan'
+        sh label: '', script: 'terraform init'  
+        sh label: '', script: 'terraform plan'
       }      
     }
 
