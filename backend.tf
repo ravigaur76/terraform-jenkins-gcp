@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-281106-tfstate"
+    bucket = "phrasal-pad-302305-tfstate"
     credentials = "./creds/serviceaccount.json"
   }
 }
